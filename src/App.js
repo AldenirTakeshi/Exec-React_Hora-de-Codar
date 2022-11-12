@@ -1,26 +1,28 @@
 import logo from "./logo.svg";
 import "./App.css";
 import HelloWorld from "./components/HelloWorld";
+import SayMyName from "./components/SayMyName";
+import Pessoa from "./components/Pessoa";
 import Frase from "./components/Frase";
+import List from "./components/List";
 
 function App() {
-  const name = "Matheus";
-  const newName = name.toUpperCase();
-
-  function sum(a, b) {
-    return a + b;
-  }
-
-  const url =
-    "https://upload.wikimedia.org/wikipedia/en/5/5d/Genshin_Impact_logo.svg";
-
+  const nome = "Maria";
   return (
     <div className="App">
-      <h2>Alterando jsx</h2>
-      <p>Olá, {newName}</p>
-      <img src={url} alt="Minha imagem" />
-      <HelloWorld />
+      <h1>Testando CSS</h1>
       <Frase />
+      <Frase />
+      <SayMyName nome="Aldenir" />
+      <SayMyName nome="João" />
+      <SayMyName nome={nome} />
+      <Pessoa
+        nome="Aldenir"
+        idade="23 anos"
+        profissao="Dev"
+        foto="http:/via.placeholder.com/150"
+      />
+      <List />
     </div>
   );
 }
