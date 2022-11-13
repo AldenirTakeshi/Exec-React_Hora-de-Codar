@@ -1,13 +1,18 @@
 import React from "react";
+import Button from "./evento/Button";
 
-const Evento = ({ numero }) => {
+const Evento = () => {
   function meuEvento() {
-    console.log(`${numero}`);
+    console.log(`Primeito Evento`);
+  }
+  function segundoEvento() {
+    console.log(`Segundo Evento`);
   }
   return (
     <div>
       <p>Clique para dispara um evento:</p>
-      <button onClick={meuEvento}>Ativar!</button>
+      <Button event={meuEvento} text="Primeiro Evento" />
+      <Button event={segundoEvento} text="Segundo Evento" />
     </div>
   );
 };
