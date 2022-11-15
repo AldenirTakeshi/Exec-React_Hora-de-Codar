@@ -1,12 +1,11 @@
 import "./App.css";
-import Form from "./components/Form";
-import Evento from "./components/Evento";
-import Condicional from "./components/Condicional";
+
 function App() {
+  const meuItens = ["React", "Vue", "Angular"];
+
   return (
     <div className="App">
-      <h1>Renderização Condicional</h1>
-      <Condicional />
+      <h1>Renderização de listas</h1>
     </div>
   );
 }
