@@ -1,4 +1,5 @@
 import "./App.css";
+import OutraLista from "./components/OutraLista";
 
 function App() {
   const meuItens = ["React", "Vue", "Angular"];
@@ -6,6 +7,8 @@ function App() {
   return (
     <div className="App">
       <h1>Renderização de listas</h1>
+      <OutraLista itens={meuItens} />
+      <OutraLista itens={[]} />
     </div>
   );
 }
